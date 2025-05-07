@@ -9,23 +9,25 @@
   </head>
   <body>
     <div class="calculator">
-      <div id="display"></div>
-      <div id="zero"></div>
-      <div id="one"></div>
-      <div id="two"></div>
-      <div id="three"></div>
-      <div id="four"></div>
-      <div id="five"></div>
-      <div id="six"></div>
-      <div id="seven"></div>
-      <div id="eight"></div>
-      <div id="nine"></div>
-      <div id="plus"></div>
-      <div id="minus"></div>
-      <div id="divide"></div>
-      <div id="multiply"></div>
-      <div id="equal"></div>
-      <div id="clear"></div>
+      <input type="text" id="display" readonly />
+      <div class="buttons" id="keys">
+        <button class="operator-btn" onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button class="operator-btn" onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button class="operator-btn" onclick="appendToDisplay('*')">*</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button class="operator-btn" onclick="appendToDisplay('/')">/</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button class="equal-btn" onclick="calculate()">=</button>
+        <button class="clear-btn" onclick="clearDisplay()">C</button>
     </div>
   </body>
 </html>
